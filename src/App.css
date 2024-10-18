@@ -64,6 +64,26 @@ img {
   height: auto;
 }
 
+hr {
+  /* Horizontal line settings for header! */
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
+  position: relative;
+  top: -75px;
+  margin-bottom: 20px;
+  width: 35px;
+}
+
+@keyframes fadeIn {
+  /* Animation for <hr>, using visibility to fulfill the effect */
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 button {
   width: 100%;
   height: auto;
@@ -106,6 +126,8 @@ nav.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #141414;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -243,15 +265,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 
 .banner {
-  margin-right: 20px;
+  margin-right: 40px;
   padding: 20;
   background-color: #141414;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  height: 20vh;
-  width: 110vw;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -259,7 +280,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
-
   flex-direction: column; /* Stack elements vertically */
 }
 
@@ -273,8 +293,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   max-width: 600px;
   transition: all 0.3 ease;
   position: relative;
-  top: 50px;
-  right: 150px;
+  top: 70px;
+  right: 120px;
 }
 
 .banner h1,
@@ -329,16 +349,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: fadeInDown 1.5s forwards;
   animation-delay: 0.9s; /* slightly longer delay than the h1 */
 }
-.banner button {
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+
+.banner p a {
+  text-decoration: none;
+  color: #eee4d2;
 }
+
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
@@ -392,6 +408,155 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: color 0.5s ease; /* Ensure the color transition is smooth when not hovering */
 }
 
+.custom-button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 150px;
+  font-family: League Spartan;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+}
+
+.fade-up {
+  animation: fade-up 4s;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stars-image {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  /* Adjust the max-width as necessary */
+  .gif-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    position: static; /* Reset position to static for mobile */
+    margin-top: 20px; /* Adjust top margin for spacing */
+  }
+
+  .banner img {
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* About Section Css */
+
+.about-section {
+  background-color: #141414;
+  color: #fff;
+  padding: 150px 20px;
+  text-align: right;
+  padding-bottom: 150px;
+}
+
+.about-description .section-title {
+  padding-left: 20px;
+}
+
+.section-title {
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+  color: #eee4d2;
+  font-weight: 700;
+  font-family: League Spartan;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  font-family: League Spartan;
+  text-align: right;
+}
+
+.highlight-link {
+  color: #eee4d2;
+  text-decoration: none;
+}
+
+.highlight-link:hover {
+  text-decoration: underline;
+}
+
+.tech-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #eee4d2;
+}
+
+.tech-list li {
+  position: relative;
+  margin-bottom: 10px;
+  text-align: right;
+  font-family: Inter;
+  font-style: oblique;
+  font-weight: 200;
+  font-size: 18px;
+  color: #fff;
+}
+
+.tech-list li::before {
+  content: "¤";
+  position: absolute;
+  left: 11rem;
+}
+
+.profile-image {
+  max-width: 50% !important;
+  border-radius: 25px;
+  transition:
+    transform 1.5s ease,
+    filter 1.5s ease;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.profile-image:hover {
+  transform: translate(-50px);
+  filter: hue-rotate(20deg) drop-shadow(5px 5px #eee4d2) brightness();
+}
+
+.fade-up-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+    opacity 1.5s ease,
+    transform 1.5s ease;
+}
+
+.fade-up-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-description a {
+  text-decoration: none;
+  color: #eee4d2;
+}
+
 .App {
   text-align: center;
 }
@@ -431,6 +596,93 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+/* Experience Css */
+
+body {
+  background: #3da3d5;
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.title {
+  font-size: 15em;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  color: black;
+}
+
+h3 {
+  padding-top: 0.25em;
+}
+
+.vertical-timeline-element-content {
+  box-shadow:
+    0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+  transition: transform 0.5s ease;
+}
+
+.vertical-timeline-element-content:hover {
+  transform: translateY(-10px);
+}
+
+.vertical-timeline-element-subtitle,
+.vertical-timeline-element-title {
+  color: black;
+  font-family: League Spartan;
+}
+
+.date {
+  font-family: League Spartan;
+  color: black;
+  display: block;
+  margin-top: 5px;
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+  color: black;
+  font-family: League Spartan;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.workButton {
+  background-color: black;
+}
+
+.workButton:hover {
+  background-color: #270222;
+}
+
+.schoolButton {
+  background-color: black;
+}
+
+.schoolButton:hover {
+  background-color: #270222;
+}
+
+.button-text {
+  font-family: League Spartan;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}
+
 /* Mobile CSS Optimization */
 
 @media (max-width: 768px) {
@@ -441,15 +693,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   nav.navbar .navbar-nav .nav-link.navbar-link {
     font-size: 12px; /* Smaller font size for mobile */
     padding: 0 5px; /* Reduced padding */
+    display: block;
+  }
+
+  .logo {
+    margin-top: 20px;
+    width: auto;
+    height: auto; /* Smaller logo size for mobile */
+    transform: scale(1.5);
   }
 
   .banner h1 {
     font-size: 40px; /* Smaller heading size for mobile */
+    text-align: center;
+  }
+
+  .banner img {
+    width: 58%;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    margin-bottom: -100px;
   }
 
   .banner p {
     font-size: 16px; /* Smaller paragraph size for mobile */
     width: 90%; /* Slightly reduce width on mobile */
+    display: inline-block;
+    text-align: center;
   }
 
   .banner button {
@@ -459,6 +730,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   .navbar-text button {
     font-size: 14px; /* Smaller button text */
+  }
+
+  .about-section,
+  .about-description {
+    text-align: center;
+    display: block;
+    margin: 0;
+  }
+
+  .tech-list li::before {
+    content: "◦";
+    position: absolute;
+    left: 0rem;
+  }
+
+  .tech-list li {
+    text-align: center;
   }
 
   /* Ensure images are responsive */
@@ -471,5 +759,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   main .container {
     padding: 0 10px; /* Adjust padding for mobile */
     flex-direction: column; /* Stack items vertically */
+  }
+}
+
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
   }
 }

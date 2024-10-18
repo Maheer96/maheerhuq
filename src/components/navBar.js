@@ -83,7 +83,7 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="mailto: maheerhuq96@gmail.com">
                 <img
                   src={mailIcon}
                   alt="Mail"
@@ -91,13 +91,13 @@ export const NavBar = () => {
                   height="100"
                 />
               </a>
-              <a href="#">
+              <a href="https://github.com/Maheer96">
                 <img src={githubIcon} alt="GitHub" height="70" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/maheer-huq-1aa3b426b/">
                 <img src={linkedinIcon} alt="LinkedIn" height="70" />
               </a>
-              <a href="#">
+              <a href="https://basescript.org/">
                 <img
                   src={basescriptIcon}
                   alt="BaseScript"
