@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/maheerhuq/static/css/main.ca769f9c.css",
-    "main.js": "/maheerhuq/static/js/main.d901e68b.js",
-    "static/js/453.b21437c2.chunk.js": "/maheerhuq/static/js/453.b21437c2.chunk.js",
-    "static/media/TimestampsProj.png": "/maheerhuq/static/media/TimestampsProj.039c9dcafcda8494d722.png",
-    "static/media/MSAMealPlanProjNew.png": "/maheerhuq/static/media/MSAMealPlanProjNew.57403b1c5ebcb25e5f23.png",
-    "static/media/BaseScriptProj.png": "/maheerhuq/static/media/BaseScriptProj.6633580cd9cbfe987491.png",
-    "static/media/MakeCloudProj.png": "/maheerhuq/static/media/MakeCloudProj.22cf929654cffcc83ddb.png",
-    "static/media/OcularProjLogo.png": "/maheerhuq/static/media/OcularProjLogo.f1c957b0fdc90fac945a.png",
-    "static/media/headshot2.JPG": "/maheerhuq/static/media/headshot2.40ecc2075c75551f7389.JPG",
-    "static/media/InterVariable.ttf": "/maheerhuq/static/media/InterVariable.e05c5f3d1fa6a3893d84.ttf",
-    "static/media/LeagueSpartan.ttf": "/maheerhuq/static/media/LeagueSpartan.373d611ec44856608b96.ttf",
-    "static/media/basescript.png": "/maheerhuq/static/media/basescript.7b2dc1a546842e9da515.png",
-    "static/media/bird.gif": "/maheerhuq/static/media/bird.a0492f8d97148466f750.gif",
-    "static/media/All The Stars.png": "/maheerhuq/static/media/All The Stars.e4bee6301f7e7c9784a2.png",
-    "static/media/maheer (1).png": "/maheerhuq/static/media/maheer (1).df93a638b2242573229c.png",
-    "static/media/logo.svg": "/maheerhuq/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/maheerhuq/index.html",
-    "main.ca769f9c.css.map": "/maheerhuq/static/css/main.ca769f9c.css.map",
-    "main.d901e68b.js.map": "/maheerhuq/static/js/main.d901e68b.js.map",
-    "453.b21437c2.chunk.js.map": "/maheerhuq/static/js/453.b21437c2.chunk.js.map"
+    "main.css": "/static/css/main.a2ced12a.css",
+    "main.js": "/static/js/main.6a4159fe.js",
+    "static/js/453.b21437c2.chunk.js": "/static/js/453.b21437c2.chunk.js",
+    "static/media/TimestampsProj.png": "/static/media/TimestampsProj.039c9dcafcda8494d722.png",
+    "static/media/MSAMealPlanProjNew.png": "/static/media/MSAMealPlanProjNew.57403b1c5ebcb25e5f23.png",
+    "static/media/BaseScriptProj.png": "/static/media/BaseScriptProj.6633580cd9cbfe987491.png",
+    "static/media/MakeCloudProj.png": "/static/media/MakeCloudProj.22cf929654cffcc83ddb.png",
+    "static/media/OcularProjLogo.png": "/static/media/OcularProjLogo.f1c957b0fdc90fac945a.png",
+    "static/media/headshot2.JPG": "/static/media/headshot2.40ecc2075c75551f7389.JPG",
+    "static/media/InterVariable.ttf": "/static/media/InterVariable.e05c5f3d1fa6a3893d84.ttf",
+    "static/media/LeagueSpartan.ttf": "/static/media/LeagueSpartan.373d611ec44856608b96.ttf",
+    "static/media/basescript.png": "/static/media/basescript.7b2dc1a546842e9da515.png",
+    "static/media/bird.gif": "/static/media/bird.a0492f8d97148466f750.gif",
+    "static/media/All The Stars.png": "/static/media/All The Stars.e4bee6301f7e7c9784a2.png",
+    "static/media/maheer (1).png": "/static/media/maheer (1).df93a638b2242573229c.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.a2ced12a.css.map": "/static/css/main.a2ced12a.css.map",
+    "main.6a4159fe.js.map": "/static/js/main.6a4159fe.js.map",
+    "453.b21437c2.chunk.js.map": "/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca769f9c.css",
-    "static/js/main.d901e68b.js"
+    "static/css/main.a2ced12a.css",
+    "static/js/main.6a4159fe.js"
   ]
 }
