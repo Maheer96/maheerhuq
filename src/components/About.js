@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import profileImage from "../assets/img/headshot.png";
+import profileImage from "../assets/img/headshot2.JPG";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const About = () => {
